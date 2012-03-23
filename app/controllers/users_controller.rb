@@ -3,6 +3,7 @@ class UsersController < ApplicationController
   end
 
   def new
+    @user = User.new
   end
 
   def edit
@@ -12,6 +13,7 @@ class UsersController < ApplicationController
   end
 
   def create
+    @user = User.create( params[:user] )
   end
 
   def delete

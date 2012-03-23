@@ -1,2 +1,9 @@
 <h1>Users#new</h1>
 <p>Find me in app/views/users/new.html.erb</p>
+
+<%= form_for :user, :url => 'create', :html => { :multipart => true } do |form| %>
+  <%= form.file_field :icon %>
+   <div class="actions">
+    <%= submit_tag %>
+  </div>
+<% end %>
