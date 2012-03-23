@@ -1,5 +1,6 @@
 S3Photos::Application.routes.draw do
-resources :users
+  match 'users/new' => 'Users#new'
+  match 'users/create' => 'Users#create'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
