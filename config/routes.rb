@@ -1,10 +1,4 @@
-S3Photos::Application.routes.draw do
-  resources :users
-
-  match 'users/new' => 'Users#new'
-  match 'users/create' => 'Users#create'
-
-  # The priority is based upon order of creation:
+S3Photos::Application.routes.draw do  # The priority is based upon order of creation:
   # first created -> highest priority.
 
   # Sample of regular route:
@@ -59,5 +53,5 @@ S3Photos::Application.routes.draw do
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
-  # match ':controller(/:action(/:id(.:format)))'
+  match ':controller(/:action(/:id(.:format)))'
 end
