@@ -13,7 +13,7 @@ gem 'mysql2'
 gem 'twitter'
 gem 'facebook'
 gem 'oauth'
-
+gem 'jquery-rails'
 gem 'geokit-rails3', '0.1.5'
 gem 'rmagick'
 gem 'validates_email_format_of',
